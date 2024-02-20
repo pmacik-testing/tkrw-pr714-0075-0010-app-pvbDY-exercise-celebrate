@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-nbps
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0010-tenant/tkrw-pr714-0075-0010-app/devfile-sample-nbps@sha256:400ebe834a9c7112e534952ca640892392c20fb77ceafd8d0d40a8cab2a1c8a7
+        name: my-nodejs
+        resources: {}
+status: {}
